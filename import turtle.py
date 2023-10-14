@@ -34,7 +34,7 @@ def creating_turtle_screen():
 def create_turtles(shuffled_colours):
     turtles=[]
     spacingg=WIDTH//(len(shuffled_colours)+1) #cuz we need the turtles to be equidistant from the edge of the screen and the from each other
-    for i,colour in enumerate(shuffled_colours):
+    for i,colour in enumerate(shuffled_colours): # what enumerate basically does it that it makes a list in the form of [(the index value, the element of the iterable)]
         turt=turtle.Turtle()
         turt.color(colour)
         turt.shape("turtle")
